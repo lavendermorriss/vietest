@@ -13,13 +13,6 @@
       const level = Math.round(battery.level * 100);
       document.getElementById('batteryLevel').textContent = `現在のバッテリー残量：${level}%`;
     });
-
-    
   </script>
-  <script>
-navigator.getBattery().then(function(battery) {
-  document.getElementById("level").textContent = (battery.level * 100) + "%";
-});
-</script>
 </body>
 </html>
