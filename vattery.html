@@ -8,11 +8,11 @@
   <h1>📱 バッテリー残量チェッカー</h1>
   <p id="batteryLevel">読み込み中...</p>
 
-  <script>
-    navigator.getBattery().then(function(battery) {
-      const level = Math.round(battery.level * 100);
-      document.getElementById('batteryLevel').textContent = `現在のバッテリー残量：${level}%`;
-    });
-  </script>
+ <script>
+navigator.getBattery().then(function(battery) {
+  document.getElementById("level").textContent = (battery.level * 100) + "%";
+});
+</script>
+
 </body>
 </html>
